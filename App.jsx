@@ -8,6 +8,9 @@ import {
   Button,
 } from 'react-native';
 import ThemeBtn from './components/ThemeBtn';
+import ThemeInput from './components/ThemeInput';
+import TextInputWithIcon from './components/test';
+
 
 const App = () => {
   const [name, setName] = useState('');
@@ -29,7 +32,12 @@ const App = () => {
         style={styles.Btn}
       />
       <Text>{show? name: ""}</Text>
-      <ThemeBtn  title="Get Started " bgColor={"skyblue"}/>
+      <ThemeBtn  title="Get Started Lessgoo " bgColor={"skyblue"}/>
+     
+
+      <TextInputWithIcon  iconName='user' placeholder="Username Neon" />
+
+
     </View>
   );
 };
