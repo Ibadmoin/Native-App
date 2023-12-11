@@ -20,6 +20,9 @@ export default function ThemeInput(props) {
     <TextInput 
     style={[inputStyle]}
     onChangeText={props.onChange}
+    onFocus={props.onFocus}
+    onBlur={props.onBlur}
+    onSubmitEditing={props.onSubmitEditing}
 
     placeholder={props.placeholder?props.placeholder:'Type Something Here..'}
     />

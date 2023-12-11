@@ -21,6 +21,7 @@ const App = () => {
   const handleSubmit =  ()=>{
     console.warn("Submitted: ", value)
   }
+
   return (
     <View>
       <TextInputWithIcon  onChange={handleChange}/>
