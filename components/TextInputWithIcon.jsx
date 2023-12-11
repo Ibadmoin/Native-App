@@ -29,7 +29,7 @@ export default function TextInputWithIcon(props) {
   return (
     <View style={containerStyle}>
       <Text style={iconStyle}>Ω</Text>
-      <ThemeInput bgColor={props.bgColor} placeholder={props.placeholder} />
+      <ThemeInput onChange={props.onChange} bgColor={props.bgColor} placeholder={props.placeholder} />
     </View>
   );
 }

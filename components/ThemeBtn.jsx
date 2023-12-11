@@ -3,11 +3,12 @@ import {View, TouchableOpacity, Text, StyleSheet} from "react-native"
 
 export default function ThemeBtn(props) {
    const ButtonContainer = {
-        backgroundColor :props.bgColor?props.bgColor: "#024220",
+        backgroundColor :props.bgColor?props.bgColor: "red",
         borderRadius: 5,
         overflow: "Hidden",
         width: props.width? props.width: 180,
         padding: 10,
+        margin: 10,
 
         alignItems: "center",
         justifyContent : "center"
@@ -20,8 +21,8 @@ export default function ThemeBtn(props) {
 
     }
   return (
-    <TouchableOpacity style={ButtonContainer}>
-        <Text style = {ButtonText}>{props.title}</Text>
+    <TouchableOpacity onPress={props.onPress} style={ButtonContainer}>
+        <Text style = {ButtonText}>{props.title?props.title:"Press here"}</Text>
     </TouchableOpacity>
   )
 }

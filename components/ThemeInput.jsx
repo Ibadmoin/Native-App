@@ -19,6 +19,7 @@ export default function ThemeInput(props) {
 
     <TextInput 
     style={[inputStyle]}
+    onChangeText={props.onChange}
 
     placeholder={props.placeholder?props.placeholder:'Type Something Here..'}
     />
