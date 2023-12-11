@@ -27,7 +27,3 @@ export default function ThemeBtn(props) {
 }
 
 
-const styles =StyleSheet.create({
-  
-
-})

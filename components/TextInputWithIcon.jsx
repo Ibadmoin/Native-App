@@ -18,9 +18,12 @@ export default function TextInputWithIcon(props) {
   const iconStyle = {
     fontSize: 20,
     // backgroundColor: "red",
+    
     // Edit icons style here and add Icon ionstead of text
     width: 24,
     height: 24,
+    textAlign : "center",
+    textAlignVertical: 'center',
   };
 
   return (

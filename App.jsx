@@ -6,48 +6,24 @@ import {
   TouchableOpacity,
   View,
   Button,
+  ScrollView,
+  FlatList,
 } from 'react-native';
-import { ThemeBtn } from './Comp';
+import { TextInputWithIcon, ThemeBtn } from './Comp';
 
 
 
-const App = () => {
-  const [name, setName] = useState('');
-  const [show ,setShow] = useState(true)
-  
-
-  const ShowName = () => {
-    setShow(!show)
-    setName('Ibad');
-  };
-  return (
-    <View>
-      <Text style={styles.Text}>Hello World!</Text>
-      <Button
-        onPress={ShowName}
-        title={show?"Hide":"Show"}
-        color={'red'}
-        
-        style={styles.Btn}
-      />
-      <Text>{show? name: ""}</Text>
-      <ThemeBtn title="press here"/>
-     
-     
 
 
+const App = ()=>{
 
-    </View>
-  );
-};
 
-const styles = StyleSheet.create({
-  Text: {
-    fontSize: 40,
+  return(
+    <TextInputWithIcon />
+  )
 
-  },
-  Btn:{
-    backgroundColor:"green"
-  }
-});
-export default App;
+
+}
+
+
+export default App
